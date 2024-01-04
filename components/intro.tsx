@@ -44,31 +44,43 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link href='/contact' className='bg-gray-900 
+        <Link href='#contact' className='group bg-gray-900 
         text-white px-7 py-3 flex 
         items-center gap-2 
         rounded-full outline-none focus:scale-110
         hover:scale-110 hover:bg-gray-950 active:scale-105
         transition'>
-          Contact me here <BsArrowRight />
+          Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 
-        <a className='bg-white
+        <a className='group bg-white
         px-7 py-3 flex 
         items-center gap-2 
-        rounded-full'>
-          Download CV <HiDownload /> 
+        rounded-full outline-none focus:scale-110
+        hover:scale-110 active:scale-105
+        transition cursor-pointer border border-black/10' href='/CV-Ken-Sanchez.pdf' download>
+          Download my CV <HiDownload className='opacity-60 group-hover:transition-y-1 transition' /> 
         </a>
+
         <a className='bg-white
         p-4 text-gray-700 flex 
         items-center gap-2 
-        rounded-full'>
+        rounded-full focus:scale-110
+        hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15]
+        transition cursor-pointer border border-black/10'
+        href='https://www.linkedin.com/in/kenrric-garcia/' target='_blank'
+        >
           <BsLinkedin />
         </a>
+
         <a className='bg-white
         p-4 text-gray-700 flex 
         items-center gap-2 text-[1.35rem]
-        rounded-full'>
+        rounded-full focus:scale-110
+        hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15]
+        transition cursor-pointer border border-black/10'
+        href='https://github.com/createdbyken' target='_blank'
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
